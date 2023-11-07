@@ -2,12 +2,13 @@ import pyautogui
 import time
 
 def on_mouse_move(x, y):
-    print(f"Mouse moved to ({x}, {y}).")
+    print(f"Mouse moved to ({x}, {y}).") #comment this line out and uncomment pass under the line if you don't want it to consume as many resources
+    #pass
 
 def main():
     initialMousePos = pyautogui.position()
     startTime = time.time()
-    timeComparison = 240
+    timeComparison = 240 #This is the time in seconds for how frequent the mouse should move 240/60 = 4mins
 
 
     while True:
